@@ -1,0 +1,139 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Body */
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Section */
+.sign-up {
+    background: rgb(236, 249, 241);
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+/* Form */
+.sign-up form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.sign-up input[type="text"],
+.sign-up input[type="email"],
+.sign-up input[type="password"],
+.sign-up input[type="date"],
+.sign-up textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sign-up input[type="radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Placeholder Styling */
+.sign-up input::placeholder {
+    color: #aaa;
+    font-size: 12px;
+}
+
+/* Gender Section */
+.gender-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adds spacing between radio groups */
+    margin: 10px 0;
+}
+
+.gender-container label {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adds small space between radio button and label text */
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.gender-container input[type="radio"] {
+    margin: 0; /* Removes unnecessary margin */
+}
+
+/* Submit Button */
+.sign-up input[type="submit"] {
+    background-color: #000000; 
+    color: #ffffff; 
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sign-up input[type="submit"]:hover {
+    background-color: #333333; 
+    color: #ffffff; 
+}
+
+/* Log in Link */
+.sign-up p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.sign-up a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .sign-up {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    .sign-up h1 {
+        font-size: 24px;
+    }
+
+    .sign-up input,
+    .sign-up textarea {
+        font-size: 14px;
+    }
+}
